@@ -20,7 +20,7 @@ public class EventTest : MonoBehaviour {
 
     private void Display(string text, BaseInteractionEventArgs e) {
         if (text == "activated") {
-            door.ChangeState(DoorStateType.OPENING);
+            door.ChangeState(DoorState.OPENING);
         }
         txt.text = text;
         print($"{text}: '{e}'");

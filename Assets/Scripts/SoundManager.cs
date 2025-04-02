@@ -15,7 +15,7 @@ public class SoundCollection {
     public SoundCollection(params string[] clipNames) {
         this.clips = new AudioClip[clipNames.Length];
         for (int i = 0; i < clips.Length; i++) {
-            clips[i] = Resources.Load<AudioClip>(clipsNames[i]);
+            clips[i] = Resources.Load<AudioClip>(clipNames[i]);
             if (clips[i] == null) {
                 Debug.Log($"can't find audio clip {clipNames[i]}");
             }
